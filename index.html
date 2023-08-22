@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Fira+Code:wght@300&family=Libre+Baskerville&family=Roboto+Serif:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Celsius to Fahrenheit Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="convert-temp">
+            <h1 class="title">Temperature Converter</h1>
+            <div class="result">
+                <span class="result-heading">Result in Fahrenheit</span>
+                <h2 class="fahrenheit-value" id="fahrenheit"></h2>
+            </div>
+            <div class="degree-type">
+                <div class="degree-field">
+                    <label for="degree">Degrees</label>
+                    <input type="number" name="degree" id="degree" />
+                </div>
+                <div class="temp-field">
+                    <label for="temp-type"></label>
+                    <select name="temperatures" id="temp-type" autocomplete="on">
+                        <option value="select">Select a Scale</option>
+                        <option id="celsius" value="celsius">Celsius</option>
+                        <option id="kelvin" value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="index.js"></script>
+
+</html>
